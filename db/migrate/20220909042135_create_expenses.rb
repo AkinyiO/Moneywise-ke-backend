@@ -1,11 +1,9 @@
 class CreateExpenses < ActiveRecord::Migration[6.1]
   def change
     create_table :expenses do |t|
-      t.string  :description
-      t.float   :amount
-      t.string  :date
-      t.integer :category_id
-      t.integer :user_id
+      t.string  :name
+      t.float   :cost
+      t.integer :payment_id
     end
   end
 end
