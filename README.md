@@ -74,6 +74,7 @@ Your backend and your frontend should be in **two different repositories**.
 Create a new repository in a **separate folder** with a React app for your
 frontend. To do this, `cd` out of the backend project directory, and use
 [create-react-app][] to generate the necessary code for your React frontend:
+Frontend link: https://github.com/AkinyiO/Moneywise-ke.git
 
 ```console
 $ npx create-react-app my-app-frontend
