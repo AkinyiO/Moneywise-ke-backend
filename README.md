@@ -15,7 +15,7 @@ You can contact me through if you have any issues. Contacts:-
 This is a simple expenditure tracker to record expenses. Users enter their budget amount and input their expense details. A summary of their expenses is available on the home page. 
 a user can easily add a new expense and its cost.
 
-link to my frontend: ### https://github.com/AkinyiO/Moneywise-ke.git
+### link to my frontend:  https://github.com/AkinyiO/Moneywise-ke.git
 
 ## Installation
 Run 'bundle install'. Start server with ```console $ bundle exec rake server```. Open provided local address in web browser.
