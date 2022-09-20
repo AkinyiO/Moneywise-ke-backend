@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
   # end
 
   get "/payments" do 
-    payments = Payment.all.order(:created_at)
+    payments = Payment.all#.order(:created_at)
     payments.to_json
   end
 
@@ -17,27 +17,27 @@ class ApplicationController < Sinatra::Base
     payment.to_json
     end
 
-    get "/expenses" do 
+  get "/expenses" do 
       expenses = Expense.all.order(:created_at)
       expenses.to_json
-    end
+  end
 
-    post "/expenses" do 
+  post "/expenses" do 
       expense = Expense.create(name: params[:name], cost: params[:cost],payment_id: params[:payment_id])
     expense.to_json
-    end  
+  end  
 
-    patch "/expenses/:id" do 
+  patch "/expenses/:id" do 
       expense =  Expense.find(params[:id])
       expense.update(name: params[:name],cost: params[:cost])
       expense.to_json
-    end
+  end
 
-    delete "/expenses/:id" do 
+  delete "/expenses/:id" do 
       expense = Expense.find(params[:id])
-      expense.delete
+      expense.destroy
       expense.to_json
-    end
+  end
 
 
 end
